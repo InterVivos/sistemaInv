@@ -45,7 +45,7 @@
   					<manifest>
   						<addClasspath>true</addClasspath>
   						<classpathPrefix>libs/</classpathPrefix>
-  						<mainClass>sistemaInv.Principal</mainClass>
+  						<mainClass>sistemaInv.backend.Principal</mainClass>
   					</manifest>
   				</archive>
   			</configuration>
