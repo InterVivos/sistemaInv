@@ -35,6 +35,11 @@ public class VentPrincipal extends JFrame
 		panelPrinc.addTab(null, new JPanel());
 		panelPrinc.setTabComponentAt(0, new JLabel("hello", UIManager.getIcon("OptionPane.informationIcon"), SwingConstants.CENTER));
 		
+		TestDB panelTest = new TestDB();
+		panelPrinc.addTab(null, panelTest);
+		panelPrinc.setTabComponentAt(1, new JLabel("Test", UIManager.getIcon("OptionPane.informationIcon"), SwingConstants.CENTER));
+		panelTest.setDividerLocation(0.5);
+		
 		panelIzq.setBackground(Color.BLACK);
 		//gridC.weightx = 0.2;
 		//gridC.fill = GridBagConstraints.BOTH;
