@@ -9,10 +9,12 @@ public class Principal {
 
 	public static void main(String[] args)
 	{
-		new VentPrincipal();
+		Principal princ = new Principal();
+		boolean correcto = princ.iniciarDB();
+		if (correcto) new VentPrincipal();
 	}
 	
-	public void iniciarDB()
+	public boolean iniciarDB()
 	{
 		try
 		{
@@ -33,10 +35,12 @@ public class Principal {
 			
 			sesion.setUserId(Session.ROOT_USER_ID);
 			instancia.startupInstance(sesion);
+			return true;
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
+			return false;
 		}
 	}
 }

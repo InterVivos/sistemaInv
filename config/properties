@@ -42,7 +42,7 @@ dateformat=dd.MM.yyyy
 diskio.mode=sync
 
 # time between writes of changed frames from the queue to disk in milliseconds
-sync.period=1000
+sync.period=10000
 
 # lock data changes for the duration of a scheduled sync of frames to disk
 sync.lock.enable=true
