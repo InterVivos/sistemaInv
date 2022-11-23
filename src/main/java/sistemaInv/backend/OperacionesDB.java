@@ -34,4 +34,17 @@ public class OperacionesDB
 			e.printStackTrace();
 		}
 	}
+	
+	public static void insertarEnTabla(Object objeto)
+	{
+		Session sesion = Session.getSession();
+		try
+		{
+			sesion.persist(objeto);
+			System.out.println("Exito en insercion");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

@@ -14,6 +14,11 @@ public class Principal {
 		if (correcto) new VentPrincipal();
 	}
 	
+	public boolean iniciarDB1()
+	{
+		return true;
+	}
+	
 	public boolean iniciarDB()
 	{
 		try

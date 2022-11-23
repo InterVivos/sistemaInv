@@ -65,7 +65,7 @@ cluster.nodes=
 # a list of fully qualified names of entity classes, separated by commas,
 # for which when the service starts, verification will be performed and,
 # if necessary, automatic registration
-auto.register.classes=sistemaInv.db.Articulo
+auto.register.classes=sistemaInv.db.Articulo,sistemaInv.db.Comprador
 
 # transport parameters - do not change this values
 transport.sync.timeout=60000

@@ -1,5 +1,7 @@
 package sistemaInv.db;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.*;
@@ -26,6 +28,23 @@ public class Articulo
 	public Articulo()
 	{
 		// TODO Auto-generated constructor stub
+	}
+
+	public void insertarDatos(String[] datos)
+	{
+		this.codigo = datos[0];
+		this.nombre = datos[1];
+		try
+		{
+			this.fecha = new SimpleDateFormat("dd/MM/yyyy").parse(datos[2]);
+			this.costo = Double.parseDouble(datos[3]);
+			this.cantidad = Integer.parseInt(datos[4]);
+			this.precio = Double.parseDouble(datos[5]);
+		}
+		catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public String getCodigo() {
